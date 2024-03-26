@@ -6,6 +6,11 @@ import authRoute from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import path from "path";
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
+
+const __dirname = path.dirname(__filename); // get the name of the directory
+
 //configure env
 dotenv.config();
 
